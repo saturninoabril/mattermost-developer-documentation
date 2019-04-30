@@ -46,3 +46,11 @@ or
 | SUBMIT\_IOS\_TO\_TESTFLIGHT | Submit the app to TestFlight once the build finishes. Valid values are: true, false | false | iOS |
 | PILOT\_USERNAME | Your Apple ID Username used to deploy the app to TestFlight. |  | iOS |
 | PILOT\_SKIP\_WAITING\_<br>FOR\_BUILD\_PROCESSING | Do not wait until TestFlight finishes processing the app.<br>Valid values are: true, false | true | iOS |
+
+
+### Other variables
+| Variable            | Description                                | Default    | Platform  |
+|---------------------|--------------------------------------------|------------|-----------|
+| TELEMETRY\_ENABLED | Mobile app telemetry is used for performance monitoring only. The data to be collected is in accordance with our [Telemetry documentation and policy](https://docs.mattermost.com/administration/telemetry.html#telemetry). If enabled, telemetry data will be sent to [telemetry server](https://github.com/mattermost/mattermost-metrics-server) if the Mattermost server where the mobile app is connected and logged in, [allows diagnostics](https://docs.mattermost.com/administration/config-settings.html?highlight=sso#enable-diagnostics-and-error-reporting)<br>Valid values are: true, false | false | Android |
+| TELEMETRY\_URL | URL to Telemetry server. |  | Android |
+| TELEMETRY\_API_KEY | API key to Telemetry server. |  | Android |
